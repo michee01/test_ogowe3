@@ -5,39 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Qui sommes-nous ? - Ogowe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white text-black font-sans">
 
-    <!--Section Nav
-    <nav class="bg-white text-black p-4 px-10 sticky top-0 z-50 border-b-gray-200 border-b-2 opacity-100">
-        <div class="container mx-auto flex justify-between items-center">
-            
-            <div class="text-xl font-bold border-l-4 border-red-600 pl-4 flex w-32 items-center">
-                <img src="images/logo-ogowe.jpeg" alt="logo de ogowe" class="h-10 w-auto object-contain">
-            </div>
-
-            <div class="hidden md:flex space-x-6 uppercase text-sm font-bold">
-                <a href="accueil.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Accueil</a>
-                <a href="apropos.html" aria-current="page" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Qui sommes-nous ?</a>
-                <a href="services.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Services</a>
-                <a href="contact.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Contact</a>
-            </div>
-            
-            <div class="flex items-center bg-gray-50 border border-gray-200 rounded-full p-1 space-x-1 text-xs font-black uppercase tracking-wider">
-                <a href="?lang=fr" class="bg-red-600 text-white px-3 py-1.5 rounded-full shadow-sm transition">Fr</a>
-                <a href="?lang=en" class="text-gray-600 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition duration-300">En</a>
-            </div>
-
-        </div>
-    </nav>
-    -->
-    
+        
     <!--Section Nav-->
-    <nav class="font-sans bg-white text-black p-4 px-10 sticky top-0 z-50 border-b-gray-200 border-b-2 opacity-100">
-        <div class="container mx-auto flex justify-between items-center">
+    <nav class="font-sans bg-white text-black sticky top-0 z-50 border-b-gray-200 border-b-2 opacity-90">
+        <div class="text-sm p-1 px-10  mb-2 flex items-start border-b-2 border-gray-200">
+            <div class="mr-5">📞 (+243) 977 976 226 | ✉️ admin@ogowecleaning.com</div>
+            <div class="mr-5">🚀 Intervention Grand Katanga</div>
+        </div>
+        <div class="container p-1  px-10 mx-auto flex justify-between items-center">
             
             <div class="text-xl font-bold border-l-4 border-red-600 pl-4 flex w-32 items-center">
-                <img src="images/logo/logo-ogowe.jpeg" alt="logo de ogowe" class="h-10 w-auto object-contain">
+                <img src="images/logo/logo-ogowe.png" alt="logo de ogowe" loading="lazy" class="h-12 w-auto object-contain">
             </div>
 
             <div class="hidden md:flex space-x-6 uppercase text-sm font-bold">
@@ -49,8 +33,8 @@
             
             <div class="flex items-center space-x-4">
                 <div class="flex items-center bg-gray-50 border border-gray-200 rounded-full p-1 space-x-1 text-xs font-black uppercase tracking-wider">
-                    <a href="?lang=fr" class="bg-red-600 text-white px-3 py-1.5 rounded-full shadow-sm transition">Fr</a>
-                    <a href="?lang=en" class="text-gray-600 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition duration-300">En</a>
+                    <a href="?lang=fr" class="bg-green-600 text-white px-3 py-1.5 rounded-full shadow-sm transition"><span class="fi fi-fr"></span> Fr</a>
+                    <a href="?lang=en" class="text-gray-600 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition duration-300"><span class="fi fi-gb"></span> En</a>
                 </div>
 
                 <button id="menu-toggle" class="md:hidden text-black focus:outline-none p-2">
@@ -94,16 +78,20 @@
             padding-bottom: 2px;
             }
     </style>
+    <!-------------------------------------------------------------------------------------------------------->
+    
     <!--
-    <header class="bg-gray-100 py-20 border-b border-gray-200">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-5xl font-black text-center uppercase tracking-tighter">
-                Qui <span class="text-red-600">sommes-nous</span> ?
-            </h1>
-            <div class="w-20 h-2 bg-red-600 mt-4 mx-auto"></div>
-        </div>
-    </header>
--->
+        <header class="bg-gray-100 py-20 border-b border-gray-200">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-5xl font-black text-center uppercase tracking-tighter">
+                    Qui <span class="text-red-600">sommes-nous</span> ?
+                </h1>
+                <div class="w-20 h-2 bg-red-600 mt-4 mx-auto"></div>
+            </div>
+        </header>
+    -->
+    <!-------------------------------------------------------------------------------------------------------->
+
     <!--Presentation de l'entreprise-->
     <section class="py-20">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -177,7 +165,7 @@
                     <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="images/nettoyage8.jpg" alt="Nettoyage Industriel" class="object-cover w-full h-full">
+                            <img src="images/nettoyage8.jpg" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Nettoyage et Entrerien</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">Assainissement des bureaux et residance.</p>
@@ -185,7 +173,7 @@
                         </div>
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="images/pestcontrol3.png" alt="Lutte Antiparasitaire" class="object-cover w-full h-full">
+                            <img src="images/pestcontrol3.png" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Lutte Antiparasitaire</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">Élimination radicale des nuisibles.</p>
@@ -193,7 +181,7 @@
                         </div>         
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="images/resto1.jpg" alt="Équipe Ogowe" class="object-cover w-full h-full">
+                            <img src="images/resto1.jpg" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Restauration</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">Gestion de cantines et soutien alimentaire.</p>
@@ -201,7 +189,7 @@
                         </div>
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="images/log2.jpg" alt="Service Traiteur" class="object-cover w-full h-full">
+                            <img src="images/log2.jpg" alt="Service Traiteur" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Logistique alimentaire</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">Gestion hygiénique des cantines d'entreprises.</p>
@@ -268,6 +256,7 @@
             </script>
         </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
     
     <!--Pourquoi choisir Ogowe-->
     <section class="py-6 bg-white overflow-hidden">
@@ -277,7 +266,7 @@
                 <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-8  scroll-animate">
                     Pourquoi choisir <span class="text-red-600">Ogowe</span> ?
                 </h3>
-                <p class="text-xl text-gray-900 leading-relaxed border-l-4 border-red-600 pl-8 text-justify  scroll-animate">
+                <p class="text-lg text-gray-900 leading-relaxed border-l-4 border-red-600 pl-8 text-justify  scroll-animate">
                     <span class="font-bold text-black">Ogowe</span> est un partenaire de confiance 
                     dans le domaine du <span class="font-bold text-black">nettoyage</span>, 
                     de l'<span class="font-bold text-black">entretien</span>, 
@@ -289,61 +278,66 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                
-                <div class="relative group">
-                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">01</div>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-black text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                        </div>
-                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Équipe expérimentée</h4>
-                        <p class="text-gray-700 text-md text-justify leading-relaxed">
-                            Des techniciens qualifiés et certifiés, forts de plusieurs années d’expérience technique en milieu industriel et minier.
-                        </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Carte 1 -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
+                    <div class="flex items-center justify-center mb-6">
+                    <!-- Icône SVG personnalisée (ex: équipe) -->
+                    <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
                     </div>
+                    <h4 class="text-lg font-black uppercase tracking-tight mb-3">Équipe expérimentée</h4>
+                    <p class="text-gray-700 text-md leading-relaxed mb-4 justify">
+                    Des techniciens qualifiés et certifiés, forts de plusieurs années d’expérience technique en milieu industriel et minier.
+                    </p>
                 </div>
 
-                <div class="relative group">
-                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">02</div>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-red-600 text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-7.618 3.015 12.023 12.023 0 00-3.13 8.161c0 6.633 5.367 12 12 12s12-5.367 12-12a12.023 12.023 0 00-3.13-8.161z"></path></svg>
-                        </div>
-                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Solutions sûres</h4>
-                        <p class="text-gray-700 text-md text-justify leading-relaxed">
-                            Nous plaçons la santé et la sécurité au premier plan, via des méthodes certifiées respectueuses de vos collaborateurs.
-                        </p>
+                <!-- Carte 2 -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
+                    <div class="flex items-center justify-center mb-6">
+                    <!-- Icône SVG personnalisée (ex: sécurité) -->
+                    <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 00-10 10v4a10 10 0 0020 0v-4a10 10 0 00-10-10z"/>
+                    </svg>
                     </div>
+                    <h4 class="text-lg font-black uppercase tracking-tight mb-3">Solutions sûres</h4>
+                    <p class="text-gray-700 text-md leading-relaxed mb-4 justify">
+                    Nous plaçons la santé et la sécurité au premier plan, via des méthodes certifiées respectueuses de vos collaborateurs.
+                    </p>
                 </div>
 
-                <div class="relative group">
-                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">03</div>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-black text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
-                        </div>
-                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Sur Mesure</h4>
-                        <p class="text-gray-700 text-md text-justify leading-relaxed">
-                            Chaque site est unique. Nous concevons des plans d'intervention adaptés aux besoins spécifiques de votre infrastructure.
-                        </p>
+                <!-- Carte 3 -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
+                    <div class="flex items-center justify-center mb-6">
+                    <!-- Icône SVG personnalisée (ex: sur mesure) -->
+                    <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
                     </div>
+                    <h4 class="text-lg font-black uppercase tracking-tight mb-3">Sur mesure</h4>
+                    <p class="text-gray-700 text-md leading-relaxed mb-4 justify">
+                    Chaque site est unique. Nous concevons des plans d'intervention adaptés aux besoins spécifiques de votre infrastructure.
+                    </p>
                 </div>
 
-                <div class="relative group">
-                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">04</div>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-red-600 text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Service fiable</h4>
-                        <p class="text-gray-700 text-md leading-relaxed text-justify">
-                            Réponse rapide, planification flexible et suivi rigoureux garantissant une tranquillité d’esprit opérationnelle.
-                        </p>
+                <!-- Carte 4 -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
+                    <div class="flex items-center justify-center mb-6">
+                    <!-- Icône SVG personnalisée (ex: fiabilité) -->
+                    <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7 4a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
                     </div>
+                    <h4 class="text-lg font-black uppercase tracking-tight mb-3">Service fiable</h4>
+                    <p class="text-gray-700 text-md leading-relaxed mb-4 justify">
+                    Réponse rapide, planification flexible et suivi rigoureux garantissant une tranquillité d’esprit opérationnelle.
+                    </p>
                 </div>
 
             </div>
+
             <div class="mt-20 pt-10 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between bg-gray-100 p-8 rounded-2xl">
                 <div class="flex items-center gap-4 mb-6 md:mb-0">
                     <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center animate-pulse">
@@ -365,6 +359,7 @@
             </div>
         </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
 
     <!--Expertise Technique-->
     <section class="py-24 bg-white">
@@ -448,6 +443,7 @@
             </div>
         </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
 
     <!--Nos engagements-->
     <section class="py-20 mb-10 bg-black text-white">
@@ -487,70 +483,79 @@
             </div>
         </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
 
     <!--Ils nous font confiance-->
-    <section class="py-20 bg-white">
+    <section class="py-16 bg-white overflow-hidden">
         <div class="container mx-auto px-6">
-            
+
+            <!-- Intro -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-16">
-                <div class="flex -space-x-4">
-                    <img class="w-12 h-12 rounded-full border-4 border-white bg-gray-200 object-cover shadow-sm" src="images/logo/logo-plurielles.JPG" alt="Client Ogowe">
-                    <img class="w-12 h-12 rounded-full border-4 border-white bg-gray-300 object-cover shadow-sm" src="images/logo/logo-diamant.JPG" alt="Client Ogowe">
-                    <img class="w-12 h-12 rounded-full border-4 border-white bg-gray-400 object-cover shadow-sm" src="images/logo/logo-jeanne.JPG"Client Ogowe">
-                    <div class="w-12 h-12 rounded-full border-4 border-white bg-red-600 flex items-center justify-center text-white text-xs font-black shadow-sm">
-                        +50
-                    </div>
+            <div class="flex -space-x-4">
+                <img src="images/logo/logo-plurielles.JPG" alt="Client Ogowe" loading="lazy" class="w-12 h-12 rounded-full border-4 border-white bg-gray-200 object-cover shadow-sm">
+                <img src="images/logo/logo-diamant.JPG" alt="Client Ogowe" loading="lazy" class="w-12 h-12 rounded-full border-4 border-white bg-gray-300 object-cover shadow-sm">
+                <img src="images/logo/logo-jeanne.JPG" alt="Client Ogowe" loading="lazy" class="w-12 h-12 rounded-full border-4 border-white bg-gray-400 object-cover shadow-sm">
+                <div class="w-12 h-12 rounded-full border-4 border-white bg-red-600 flex items-center justify-center text-white text-xs font-black shadow-sm">
+                +50
                 </div>
-                
-                <div class="max-w-xl">
-                    <p class="text-xl italic font-bold text-gray-800 border-l-4 border-red-600 pl-6 py-2 leading-relaxed">
-                        "Déjà de nombreux clients nous font confiance à <span class="text-red-600">Lubumbashi</span> et dans le grand Katanga pour notre rigueur et notre discrétion."
-                    </p>
+            </div>
+            <div class="max-w-xl">
+                <p class="text-xl italic text-justify font-bold text-gray-800 border-l-4 border-red-600 pl-6 py-2 leading-relaxed">
+                "Déjà de nombreux clients nous font confiance à <span class="text-red-600">Lubumbashi</span> et dans le grand Katanga pour notre rigueur et notre discrétion."
+                </p>
+            </div>
+            </div>
+
+            <!-- Carrousel logos -->
+            <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
+            <h4 class="text-center text-red-600 text-md font-black uppercase tracking-[0.3em] mb-12">
+                Ils nous font confiance
+            </h4>
+
+            <!-- Marquee container -->
+            <div class="overflow-hidden relative">
+                <div class="flex animate-marquee space-x-16">
+                <img src="images/logo/logo-plurielles.JPG" alt="Logo plurielles" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
+                <img src="images/logo/logo-bank.JPG" alt="Logo CRDB Bank" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
+                <img src="images/logo/logo-diamant.JPG" alt="Logo Centre medical diamant" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
+                <img src="images/logo/logo-jeanne.JPG" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
+                <img src="images/logo/logo-kamao.JPG" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
+                <img src="images/logo/logo-kico.JPG" alt="Logo Kico S.A" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
+                <img src="images/logo/logo-luano.JPG" alt="Logo Luano City" loading="lazy" class="h-20 object-contain grayscale hover:grayscale-0 transition duration-300">
                 </div>
             </div>
 
-            <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
-                <h4 class="text-center text-red-600 text-md font-black uppercase tracking-[0.3em] mb-12">
-                    Ils nous font confiance
-                </h4>
-                
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-10 items-center justify-items-center">
-                    <div class="group">
-                        <img src="images/logo/logo-plurielles.jpg" alt="Logo plurielles" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                    <div class="group">
-                        <img src="images/logo/logo-bank.JPG" alt="Logo CRDB Bank" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                    <div class="group">
-                        <img src="images/logo/logo-diamant.JPG" alt="Logo Centre medical diamant" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                    <div class="group">
-                        <img src="images/logo/logo-jeanne.JPG" alt="Logo Polyclinique Jeanne d'Arc" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                    <div class="group">
-                        <img src="images/logo/logo-kamao.JPG" alt="Logo Kamao COPPER S.A" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                    <div class="group">
-                        <img src="images/logo/logo-kico.JPG" alt="Logo Kico S.A" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                    <div class="group">
-                        <img src="images/logo/logo-luano.JPG" alt="Logo Luano City" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    </div>
-                </div>
+            <!-- Mention -->
+            <p class="text-center mt-8 text-gray-600 font-bold">+50 clients satisfaits</p>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-red-600 text-white text-center">
+    <style>
+        /* Animation type "marquee" */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+    <!-------------------------------------------------------------------------------------------------------->
+
+    <!--Decouvrir nos services-->
+    <section class="py-16 bg-gray-100 text-black text-center">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-8">Prêt à découvrir les services d'<span class="pb-1 font-bold text-black border-b-2 border-black">Ogowe</span> ?</h2>
-            <a href="services.html" class=" rounded-xl bg-black text-white px-10 py-4 rounded-none font-bold uppercase hover:bg-white hover:text-black transition">
+            <h2 class="text-4xl font-bold mb-10">Prêt à découvrir les services d'<span class="pb-1 font-bold text-red-600">Ogowe</span> ?</h2>
+            <a href="services.html" class="w-full rounded-2xl sm:w-auto bg-red-600 hover:bg-black text-white font-black uppercase tracking-widest px-10 py-5 transition-all duration-300 transform hover:-translate-y-1 shadow-xl text-center">
                 Nos services
             </a>
         </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
 
-    
     <!--Footer-->
     <footer class="bg-black text-white w-full pt-10 pb-5 px-8 mt-12 border-t border-[#D4AF37]/20">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2">
@@ -612,23 +617,13 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-white text-sm">Email:</span>
-                        <a href="mailto:info@plurielles.cd" class="text-gray-400 hover:text-white text-sm transition-colors">admin@ogowecleaning.com </a>
+                        <a href="mailto:admin@ogowecleaning.com" class="text-gray-400 hover:text-white text-sm transition-colors">admin@ogowecleaning.com</a>
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-white text-sm">Telephone:</span>
                         <a href="https://wa.me/243977976226?text=Bonjour%20je%20suis%20intéressé%20par%20vos%20services" class="text-gray-400 hover:text-white text-sm transition-colors">(+243) 977976226</a>
                     </div>
                 </div>
-                <!--
-                <div class="flex gap-4 mt-4">
-                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-black transition-all duration-300 text-gray-400">
-                        <i class="fa-brands fa-linkedin-in"></i> <span class="material-symbols-outlined text-sm"></span>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-black transition-all duration-300 text-gray-400">
-                        <span class="material-symbols-outlined text-sm"></span>
-                    </a>
-                </div>
-                -->
             </div>
 
             <div class="md:col-span-4 border-t border-white/5 mt-8 pt-6 text-center">
@@ -638,6 +633,7 @@
             </div>
         </div>
     </footer>
+    <!-------------------------------------------------------------------------------------------------------->
 
 </body>
 </html>

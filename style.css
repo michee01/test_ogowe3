@@ -1,0 +1,27 @@
+body {
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p, a, li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.justify {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  /* Pour les navigateurs qui supportent la langue */
+  lang: fr;
+}
+
+.justify1 {
+  text-align: justify;
+  text-justify: inter-word;   /* améliore la répartition */
+  word-spacing: -0.05em;      /* réduit très légèrement l'espace */
+}
