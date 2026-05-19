@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Qui sommes-nous ? - Ogowe</title>
+</head>
+<body class="bg-white text-black font-sans">
+
+    <!--Section Nav
+    <nav class="bg-white text-black p-4 px-10 sticky top-0 z-50 border-b-gray-200 border-b-2 opacity-100">
+        <div class="container mx-auto flex justify-between items-center">
+            
+            <div class="text-xl font-bold border-l-4 border-red-600 pl-4 flex w-32 items-center">
+                <img src="images/logo-ogowe.jpeg" alt="logo de ogowe" class="h-10 w-auto object-contain">
+            </div>
+
+            <div class="hidden md:flex space-x-6 uppercase text-sm font-bold">
+                <a href="accueil.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Accueil</a>
+                <a href="apropos.html" aria-current="page" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Qui sommes-nous ?</a>
+                <a href="services.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Services</a>
+                <a href="contact.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Contact</a>
+            </div>
+            
+            <div class="flex items-center bg-gray-50 border border-gray-200 rounded-full p-1 space-x-1 text-xs font-black uppercase tracking-wider">
+                <a href="?lang=fr" class="bg-red-600 text-white px-3 py-1.5 rounded-full shadow-sm transition">Fr</a>
+                <a href="?lang=en" class="text-gray-600 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition duration-300">En</a>
+            </div>
+
+        </div>
+    </nav>
+    -->
+    
+    <!--Section Nav-->
+    <nav class="font-sans bg-white text-black p-4 px-10 sticky top-0 z-50 border-b-gray-200 border-b-2 opacity-100">
+        <div class="container mx-auto flex justify-between items-center">
+            
+            <div class="text-xl font-bold border-l-4 border-red-600 pl-4 flex w-32 items-center">
+                <img src="images/logo/logo-ogowe.jpeg" alt="logo de ogowe" class="h-10 w-auto object-contain">
+            </div>
+
+            <div class="hidden md:flex space-x-6 uppercase text-sm font-bold">
+                <a href="index.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Accueil</a>
+                <a href="apropos.html" aria-current="page" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Qui sommes-nous ?</a>
+                <a href="services.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Services</a>
+                <a href="contact.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center bg-gray-50 border border-gray-200 rounded-full p-1 space-x-1 text-xs font-black uppercase tracking-wider">
+                    <a href="?lang=fr" class="bg-red-600 text-white px-3 py-1.5 rounded-full shadow-sm transition">Fr</a>
+                    <a href="?lang=en" class="text-gray-600 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition duration-300">En</a>
+                </div>
+
+                <button id="menu-toggle" class="md:hidden text-black focus:outline-none p-2">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col space-y-4 uppercase text-xs font-bold border-t border-gray-100 pt-4 pb-2">
+            <a href="index.html" class="hover:text-red-600 transition pl-4 border-l-4 border-red-600">Accueil</a>
+            <a href="apropos.html" aria-current="page" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Qui sommes-nous ?</a>
+            <a href="services.html" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Services</a>
+            <a href="contact.html" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        menuToggle.addEventListener('click', () => {
+            // Affiche ou masque le menu mobile
+            mobileMenu.classList.toggle('hidden');
+            
+            // Alterne entre l'icône du hamburger et l'icône de fermeture
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
+
+    <style> 
+        a[aria-current="page"] {
+            border-bottom: 4px solid black;
+            padding-bottom: 2px;
+            }
+    </style>
+    <!--
+    <header class="bg-gray-100 py-20 border-b border-gray-200">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-black text-center uppercase tracking-tighter">
+                Qui <span class="text-red-600">sommes-nous</span> ?
+            </h1>
+            <div class="w-20 h-2 bg-red-600 mt-4 mx-auto"></div>
+        </div>
+    </header>
+-->
+    <!--Presentation de l'entreprise-->
+    <section class="py-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <style>
+                    @keyframes zoomInFade {
+                        0% {
+                        transform: scale(0.9);
+                        opacity: 0;
+                        }
+                        100% {
+                        transform: scale(1);
+                        opacity: 1;
+                        }
+                    }
+                    /* Classe appliquée au scroll */
+                    .animate-zoom {
+                        animation: zoomInFade 1.2s ease forwards;
+                    }
+                    /* Effet au survol */
+                    .scroll-animate:hover {
+                        transform: scale(1.05);
+                        transition: transform 0.4s ease, opacity 0.4s ease;
+                        opacity: 1;
+                    }
+                </style>
+
+                <h2 class="text-2xl font-bold mb-6 flex items-center scroll-animate">
+                    <span class="w-8 h-px bg-red-600 mr-4"></span>
+                    Présentation de l'entreprise
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-6 text-justify  scroll-animate">
+                    Basée à Lubumbashi, <span class="font-bold ">Ogowe</span>  se dédie à maintenir la 
+                    propreté des espaces de vie et de travail et offir un excellent service de restauration. <br>
+                    Nous sommes votre partenaire stratégique pour un environnement sain, sans nuisibles et 
+                    un service professionnel de restauration et logistique en République Démocratique du Congo.
+                    Nous offrons des services specialisés dans le nettoyage et entretien intérieur et extérieur 
+                    des maisons, bureaux et usines sûrs, dans la restauration et logistique Agro-Alimentaire.                    
+                </p>
+
+                <script>
+                    // Observer pour déclencher l’animation au scroll
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-zoom');
+                        } else {
+                            entry.target.classList.remove('animate-zoom'); // rejoue si on ressort/revient
+                        }
+                        });
+                    }, { threshold: 0.2 });
+
+                    document.querySelectorAll('.scroll-animate').forEach(el => {
+                        observer.observe(el);
+                    });
+                </script>
+
+                <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
+                    <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Notre Mission scroll-animate</h3>
+                    <p class="text-xl italic font-light text-justify  scroll-animate">
+                        "Créer un environnement propre, sain et exempt de nuisibles tout en plaçant le confort et le bien-être 
+                        de nos clients au cœur de nos actions."
+                    </p>
+                </div>
+            </div>
+            <div class="relative max-w-4xl mx-auto my-12">
+                <div class="absolute -top-4 -left-4 w-full h-full border-4 border-red-600 z-0 rounded-2xl hidden md:block"></div>
+
+                <div class="relative z-10 bg-gray-200 h-96 flex items-center justify-center text-gray-600 font-bold overflow-hidden rounded-2xl shadow-xl">
+                    
+                    <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/nettoyage8.jpg" alt="Nettoyage Industriel" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <p class="font-black text-lg uppercase tracking-tight">Nettoyage et Entrerien</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">Assainissement des bureaux et residance.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/pestcontrol3.png" alt="Lutte Antiparasitaire" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <p class="font-black text-lg uppercase tracking-tight">Lutte Antiparasitaire</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">Élimination radicale des nuisibles.</p>
+                            </div>
+                        </div>         
+
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/resto1.jpg" alt="Équipe Ogowe" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <p class="font-black text-lg uppercase tracking-tight">Restauration</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">Gestion de cantines et soutien alimentaire.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/log2.jpg" alt="Service Traiteur" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <p class="font-black text-lg uppercase tracking-tight">Logistique alimentaire</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">Gestion hygiénique des cantines d'entreprises.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-red-600 text-white w-10 h-10 flex items-center justify-center rounded-full transition duration-300 backdrop-blur-sm">
+                        &#10094;
+                    </button>
+                    <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-red-600 text-white w-10 h-10 flex items-center justify-center rounded-full transition duration-300 backdrop-blur-sm">
+                        &#10095;
+                    </button>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full">
+                        <button class="w-2.5 h-2.5 rounded-full bg-red-600 focus:outline-none" onclick="goToSlide(0)"></button>
+                        <button class="w-2.5 h-2.5 rounded-full bg-white focus:outline-none" onclick="goToSlide(1)"></button>
+                        <button class="w-2.5 h-2.5 rounded-full bg-white focus:outline-none" onclick="goToSlide(2)"></button>
+                        <button class="w-2.5 h-2.5 rounded-full bg-white focus:outline-none" onclick="goToSlide(3)"></button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                let currentSlide = 0;
+                const slides = document.getElementById('slider');
+                const totalSlides = 4;
+                const dots = document.querySelectorAll('.absolute.bottom-4 button');
+
+                function updateSlider() {
+                    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    
+                    // Mettre à jour la couleur des petits points (dots)
+                    dots.forEach((dot, index) => {
+                        if (index === currentSlide) {
+                            dot.className = "w-2.5 h-2.5 rounded-full bg-red-600 focus:outline-none";
+                        } else {
+                            dot.className = "w-2.5 h-2.5 rounded-full bg-white focus:outline-none";
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateSlider();
+                }
+
+                function prevSlide() {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateSlider();
+                }
+
+                function goToSlide(slideIndex) {
+                    currentSlide = slideIndex;
+                    updateSlider();
+                }
+
+                document.getElementById('next-btn').addEventListener('click', nextSlide);
+                document.getElementById('prev-btn').addEventListener('click', prevSlide);
+
+                // Défilement automatique toutes les 5 secondes (optionnel)
+                setInterval(nextSlide, 5000);
+            </script>
+        </div>
+    </section>
+    
+    <!--Pourquoi choisir Ogowe-->
+    <section class="py-6 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            
+            <div class="max-w-4xl mb-14">
+                <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-8  scroll-animate">
+                    Pourquoi choisir <span class="text-red-600">Ogowe</span> ?
+                </h3>
+                <p class="text-xl text-gray-900 leading-relaxed border-l-4 border-red-600 pl-8 text-justify  scroll-animate">
+                    <span class="font-bold text-black">Ogowe</span> est un partenaire de confiance 
+                    dans le domaine du <span class="font-bold text-black">nettoyage</span>, 
+                    de l'<span class="font-bold text-black">entretien</span>, 
+                    de la lutte <span class="font-bold text-black">antiparasitaire</span>, 
+                    de la <span class="font-bold text-black">restauration</span> 
+                    et <span class="font-bold text-black">logistique agro-alimentaire</span>.
+                    Nous offrons des services d’extermination et de prévention de haute qualité aux entreprises 
+                    les plus <span class="italic">emblématiques</span> de Lubumbashi et de la RDC.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                
+                <div class="relative group">
+                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">01</div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-black text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Équipe expérimentée</h4>
+                        <p class="text-gray-700 text-md text-justify leading-relaxed">
+                            Des techniciens qualifiés et certifiés, forts de plusieurs années d’expérience technique en milieu industriel et minier.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">02</div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-red-600 text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-7.618 3.015 12.023 12.023 0 00-3.13 8.161c0 6.633 5.367 12 12 12s12-5.367 12-12a12.023 12.023 0 00-3.13-8.161z"></path></svg>
+                        </div>
+                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Solutions sûres</h4>
+                        <p class="text-gray-700 text-md text-justify leading-relaxed">
+                            Nous plaçons la santé et la sécurité au premier plan, via des méthodes certifiées respectueuses de vos collaborateurs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">03</div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-black text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Sur Mesure</h4>
+                        <p class="text-gray-700 text-md text-justify leading-relaxed">
+                            Chaque site est unique. Nous concevons des plans d'intervention adaptés aux besoins spécifiques de votre infrastructure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -top-4 -left-4 text-6xl font-black text-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none">04</div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-red-600 text-white flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="text-lg font-black uppercase tracking-tight mb-3">Service fiable</h4>
+                        <p class="text-gray-700 text-md leading-relaxed text-justify">
+                            Réponse rapide, planification flexible et suivi rigoureux garantissant une tranquillité d’esprit opérationnelle.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-20 pt-10 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between bg-gray-100 p-8 rounded-2xl">
+                <div class="flex items-center gap-4 mb-6 md:mb-0">
+                    <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center animate-pulse">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-bold text-black uppercase tracking-tight">
+                        Vous avez besoin d'un devis personnalisé ?
+                    </p>
+                </div>
+                
+                <a href="contact.html" class="rounded-2xl group relative inline-flex items-center justify-center px-8 py-4 font-black text-white uppercase tracking-widest bg-black overflow-hidden transition-all duration-300 hover:bg-red-600">
+                    <span class="relative z-10">Contactez-nous</span>
+                    <svg class="w-5 h-5 ml-3 relative z-10 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Expertise Technique-->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            
+            <div class="mb-16">
+                <span class="text-red-700 font-black uppercase tracking-[0.3em] text-sm">Expertise Technique</span>
+                <h2 class="text-4xl md:text-5xl font-black text-black uppercase mt-2">
+                    Au-delà du simple <span class="text-red-600">nettoyage</span>
+                </h2>
+                <div class="w-24 h-1.5 bg-black mt-6"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <p class="text-xl text-gray-800 text-justify leading-relaxed font-medium">
+                        Nous garantissons une protection durable et un environnement plus sain pour vos infrastructures les plus critiques.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-black text-white flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                                <span class="font-bold">01</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-black italic">Analyse de Terrain</h4>
+                                <p class="text-md text-gray-800">Évaluation précise des risques et identification des vecteurs de nuisibles.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-black text-white flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                                <span class="font-bold">02</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-black italic">Intervention Certifiée</h4>
+                                <p class="text-md text-gray-800">Utilisation de produits homologués respectant les normes de sécurité Santé-Environnement.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-black text-white flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                                <span class="font-bold">03</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-black italic">Suivi & Prévention</h4>
+                                <p class="text-md text-gray-800">Rapports détaillés et mise en place de barrières protectrices longue durée.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid md:grid-cols-2 gap-6">
+                    
+                    <div class="p-8 border-2 border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border-l-8 border-l-red-600">
+                        <div class="text-4xl mb-4">🏭</div>
+                        <h3 class="text-xl font-black uppercase mb-2">Sites Miniers & Usines</h3>
+                        <p class="text-md text-gray-800 text-justify leading-tight">Nettoyage technique et contrôle des termites pour protéger les infrastructures lourdes et câblages.</p>
+                    </div>
+
+                    <div class="p-8 border-2 border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border-l-8 border-l-black">
+                        <div class="text-4xl mb-4">🏢</div>
+                        <h3 class="text-xl font-black uppercase mb-2">Bureaux & Commerces</h3>
+                        <p class="text-md text-gray-800 text-justify leading-tight">Assainissement des espaces de travail pour maximiser le bien-être et la productivité de vos équipes.</p>
+                    </div>
+
+                    <div class="p-8 border-2 border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border-l-8 border-l-black">
+                        <div class="text-4xl mb-4">🏠</div>
+                        <h3 class="text-xl font-black uppercase mb-2">Résidences Privées</h3>
+                        <p class="text-md text-gray-800 text-justify leading-tight">Désinsectisation complète et nettoyage de fin de chantier pour une sérénité totale à domicile.</p>
+                    </div>
+
+                    <div class="p-8 border-2 border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border-l-8 border-l-red-600">
+                        <div class="text-4xl mb-4">🍽️</div>
+                        <h3 class="text-xl font-black uppercase mb-2">Cuisines Pro</h3>
+                        <p class="text-md text-gray-800 text-justify leading-tight">Maintien strict des normes d'hygiène alimentaire et élimination radicale des nuisibles.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Nos engagements-->
+    <section class="py-20 mb-10 bg-black text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold uppercase">Nos Engagements</h2>
+                <p class="text-red-600 font-medium mt-2">L'excellence au service de votre sérénité</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-gray-800 p-10 hover:border-red-600 transition duration-300 group">
+                    <div class="text-red-600 text-4xl mb-6 group-hover:scale-110 transition">🌱</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase">Sécurité & Santé</h4>
+                    <p class="text-gray-400 text-justify">
+                        Nous privilégions l'utilisation de méthodes respectueuses de l'environnement chaque 
+                        fois que possible, plaçant votre santé au premier plan.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 p-10 hover:border-red-600 transition duration-300 group">
+                    <div class="text-red-600 text-4xl mb-6 group-hover:scale-110 transition">💼</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase">Professionnalisme</h4>
+                    <p class="text-gray-400 text-justify">
+                        Nos techniciens sont qualifiés, certifiés et forts de plusieurs années d'expérience 
+                        terrain en lutte antiparasitaire et nettoyage.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 p-10 hover:border-red-600 transition duration-300 group">
+                    <div class="text-red-600 text-4xl mb-6 group-hover:scale-110 transition">📅</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase">Fiabilité</h4>
+                    <p class="text-gray-400 text-justify">
+                        Nous garantissons un suivi rigoureux, une réponse rapide et une planification flexible 
+                        pour votre entière tranquillité d'esprit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Ils nous font confiance-->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-16">
+                <div class="flex -space-x-4">
+                    <img class="w-12 h-12 rounded-full border-4 border-white bg-gray-200 object-cover shadow-sm" src="images/logo/logo-plurielles.JPG" alt="Client Ogowe">
+                    <img class="w-12 h-12 rounded-full border-4 border-white bg-gray-300 object-cover shadow-sm" src="images/logo/logo-diamant.JPG" alt="Client Ogowe">
+                    <img class="w-12 h-12 rounded-full border-4 border-white bg-gray-400 object-cover shadow-sm" src="images/logo/logo-jeanne.JPG"Client Ogowe">
+                    <div class="w-12 h-12 rounded-full border-4 border-white bg-red-600 flex items-center justify-center text-white text-xs font-black shadow-sm">
+                        +50
+                    </div>
+                </div>
+                
+                <div class="max-w-xl">
+                    <p class="text-xl italic font-bold text-gray-800 border-l-4 border-red-600 pl-6 py-2 leading-relaxed">
+                        "Déjà de nombreux clients nous font confiance à <span class="text-red-600">Lubumbashi</span> et dans le grand Katanga pour notre rigueur et notre discrétion."
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
+                <h4 class="text-center text-red-600 text-md font-black uppercase tracking-[0.3em] mb-12">
+                    Ils nous font confiance
+                </h4>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-10 items-center justify-items-center">
+                    <div class="group">
+                        <img src="images/logo/logo-plurielles.jpg" alt="Logo plurielles" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                    <div class="group">
+                        <img src="images/logo/logo-bank.JPG" alt="Logo CRDB Bank" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                    <div class="group">
+                        <img src="images/logo/logo-diamant.JPG" alt="Logo Centre medical diamant" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                    <div class="group">
+                        <img src="images/logo/logo-jeanne.JPG" alt="Logo Polyclinique Jeanne d'Arc" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                    <div class="group">
+                        <img src="images/logo/logo-kamao.JPG" alt="Logo Kamao COPPER S.A" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                    <div class="group">
+                        <img src="images/logo/logo-kico.JPG" alt="Logo Kico S.A" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                    <div class="group">
+                        <img src="images/logo/logo-luano.JPG" alt="Logo Luano City" class="h-14 w-auto opacity-100 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-red-600 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Prêt à découvrir les services d'<span class="pb-1 font-bold text-black border-b-2 border-black">Ogowe</span> ?</h2>
+            <a href="services.html" class=" rounded-xl bg-black text-white px-10 py-4 rounded-none font-bold uppercase hover:bg-white hover:text-black transition">
+                Nos services
+            </a>
+        </div>
+    </section>
+
+    
+    <!--Footer-->
+    <footer class="bg-black text-white w-full pt-10 pb-5 px-8 mt-12 border-t border-[#D4AF37]/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2">
+            
+            <div class="space-y-6">
+                <div class="flex flex-col">
+                    <h4 class="text-white font-black text-2xl uppercase tracking-tighter">
+                        OGOWE <span class="text-red-600 italic">CLEANING</span>
+                    </h4>
+                    <div class="w-12 h-1 bg-red-600 mt-2"></div>
+                </div>
+                <div class="flex space-x-4">
+                    <span class="text-sm font-semibold uppercase tracking-tighter border-l-2 border-white pl-2 ml-4 text-gray-400">
+                        Hygiène et entretien des entreprises <br> 
+                        Santé et sécurité environnementale<br>
+                        Distribution et solutions alimentaires intégrées<br>
+                    </span>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 pl-6">
+                <h5 class="text-red-600 text-xs font-bold tracking-[3px] uppercase mb-2">Navigation</h5>
+                <nav class="flex flex-col gap-3">
+                    <a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
+                        <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
+                        Accueil
+                    </a>
+                    <a href="about.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
+                        <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
+                        Qui sommes-nous
+                    </a>
+                    <a href="services.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
+                        <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
+                        Services
+                    </a>
+                    <a href="news.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
+                        <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
+                        Actualités
+                    </a>
+                </nav>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h5 class="text-red-600 text-xs font-bold tracking-[3px] uppercase mb-2">Légal</h5>
+                <nav class="flex flex-col gap-3">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Mentions Légales</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Politique de Confidentialité</a>
+                </nav>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h5 class="text-red-600 text-xs font-bold tracking-[3px] uppercase mb-2">contact</h5>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-white text-sm">localisation:</span>
+                        <p class="text-gray-400 text-sm text-justify">
+                            Av. Mgr Tafunga Mbayo N°50 Golf Malela Tshamalale - Lubumbashi RDC
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-white text-sm">Email:</span>
+                        <a href="mailto:info@plurielles.cd" class="text-gray-400 hover:text-white text-sm transition-colors">admin@ogowecleaning.com </a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-white text-sm">Telephone:</span>
+                        <a href="https://wa.me/243977976226?text=Bonjour%20je%20suis%20intéressé%20par%20vos%20services" class="text-gray-400 hover:text-white text-sm transition-colors">(+243) 977976226</a>
+                    </div>
+                </div>
+                <!--
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-black transition-all duration-300 text-gray-400">
+                        <i class="fa-brands fa-linkedin-in"></i> <span class="material-symbols-outlined text-sm"></span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-black transition-all duration-300 text-gray-400">
+                        <span class="material-symbols-outlined text-sm"></span>
+                    </a>
+                </div>
+                -->
+            </div>
+
+            <div class="md:col-span-4 border-t border-white/5 mt-8 pt-6 text-center">
+                <p class="text-gray-500 text-[12px] tracking-[4px] font-bold uppercase font-medium">
+                    © 2026 <span class="text-gray-100">Ogowe</span>. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
