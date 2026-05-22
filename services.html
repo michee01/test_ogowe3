@@ -27,7 +27,6 @@
 
             <div class="hidden md:flex space-x-6 uppercase text-sm font-bold">
                 <a href="index.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Accueil</a>
-                <a href="apropos.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Qui sommes-nous ?</a>
                 <a href="services.html" aria-current="page" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Services</a>
                 <a href="contact.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Contact</a>
             </div>
@@ -51,7 +50,6 @@
 
         <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col space-y-4 uppercase text-xs font-bold border-t border-gray-100 pt-4 pb-2">
             <a href="index.html" class="hover:text-red-600 transition pl-4 border-l-4 border-red-600">Accueil</a>
-            <a href="apropos.html" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Qui sommes-nous ?</a>
             <a href="services.html" aria-current="page" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Services</a>
             <a href="contact.html" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Contact</a>
         </div>
@@ -80,69 +78,40 @@
             }
     </style>
     <!-------------------------------------------------------------------------------------------------------->
-
-    <header class="bg-black text-white py-20 relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-4xl md:text-6xl font-black uppercase mb-4">Nos Offres de <span class="text-red-600">services</span></h1>
-            <p class="text-xl text-gray-200 max-w-2xl text-justify">Une expertise technique multidisciplinaire pour répondre aux exigences les plus strictes des secteurs résidentiels, commerciaux et industriels.</p>
+    
+    <header class="relative bg-black text-white py-20 overflow-hidden">
+        <!-- Image de fond -->
+        <div class="absolute inset-0">
+            <img src="images/logo/logo-ogowe.jpeg" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
-        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full"></div>
+
+        <!-- Contenu -->
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-black uppercase mb-4">
+                Nos Offres de services
+            </h1>
+            <p class="text-xl text-gray-200 max-w-2xl text-justify">
+                Une expertise technique multidisciplinaire pour répondre à vos exigences résidentiels, commerciaux et industriels.
+            </p>
+        </div>
+
+        <!-- Décoratif cercle rouge -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full z-0"></div>
     </header>
+
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Lutte antiparasitaire-->
-    <section class="py-20 border-b border-gray-100">
+    <!--Hygiene et entretien-->
+    <section id="hygiene-entretien" class="py-20 border-b border-gray-100">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2">
-                    <span class="text-red-600 font-bold tracking-widest uppercase text-sm">Service 01</span>
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Lutte Antiparasitaire (Pest Control)</h2>
+                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Hygiène et entretien des entreprises</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        Nous sommes experts dans l'éradication et la prévention des nuisibles qui menacent votre santé et 
-                        vos infrastructures. Notre approche repose sur des traitements ciblés et des solutions sûres.
-                    </p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Rats et souris</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Cafards et moustiques</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Termites et punaises de lit</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Fumigation & Élimination des nids</span>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="md:w-1/2 bg-gray-200 h-80 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="images/pestcontrol3.png" alt="service logistique"  loading="lazy" srcset="" class="w-full h-80">
-                </div>
-            </div>
-            <div class="pt-6 text-center">
-                <a href="contact.html" class="px-6 py-3 bg-red-600 text-lg font-bold text-white rounded-lg hover:bg-black ">Demandez un devis</a>
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------------------------------------------------------------------------->
-
-    <!--Nettoyage-->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
-                <div class="md:w-1/2">
-                    <span class="text-red-600 font-bold tracking-widest uppercase text-sm">Service 02</span>
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Services de Nettoyage</h2>
-                    <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        Ogowe va au-delà du nettoyage de surface. Nous garantissons une protection durable et 
-                        un environnement impeccable pour vos espaces privés et professionnels.
-                    </p>
+                        Nous assurons la propreté et l’entretien des espaces professionnels, en garantissant 
+                        un environnement impeccable qui reflète l’image et l’excellence de nos clients.
+                    </p>                    
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
                             <div class="bg-black text-white p-2 mt-1">🏠</div>
@@ -163,107 +132,85 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="md:w-1/2 bg-white border border-gray-200 h-80 rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
-                    <img src="images/nettoyage1.jpg" alt="service logistique" loading="lazy" srcset="" class="w-full h-80">
+                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="images/assets/hygiene.jpeg" alt="service hygiène et entretien"  loading="lazy" srcset="" class="w-full h-85">
                 </div>
-            </div>
-            <div class="pt-6 text-center">
-                <a href="contact.html" class="px-6 py-3 bg-red-600 text-lg font-bold text-white rounded-lg hover:bg-black ">Demandez un devis</a>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Restauration-->
-    <section class="py-20 border-b border-gray-100">
+    <!--Sante et securite-->
+    <section id="sante-securite" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
                 <div class="md:w-1/2">
-                    <span class="text-red-600 font-bold tracking-widest uppercase text-sm">Service 03</span>
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Service de Restauration </h2>
+                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Santé et sécurité environnementale</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        <span class="font-bold">Ogowe</span> propose des services de restauration et de soutien
-                        alimentaire conçus pour les sites miniers et milieux corporatifs, industriels et 
-                        opérationnels dans le respect strict des normes d'hygiène. <br>
-                        Nos solutions sont structurées pour accompagner les entreprises nécessitant 
-                        des opérations alimentaires cohérentes, bien gérées et conformes.
+                        Grâce à nos solutions de lutte antiparasitaire (désinsectisation, fumigation, dératisation), au contrôle sanitaire 
+                        et à la prévention durable, nous protégeons vos équipes et vos infrastructures contre les risques sanitaires.
                     </p>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Cantines alimentaires</span>
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Rats et souris</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Cuisine industrielle</span>
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Insectes rampants et volants</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Environnements corporatifs & bureaux</span>
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Termites</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Solutions personnalisées</span>
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Fumigation</span>
                         </li>
                     </ul>
                 </div>
-                <div class="md:w-1/2 bg-gray-200 h-80 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="images/resto2.jpg" alt="service logistique" loading="lazy" srcset="" class="w-full h-80">
+                <div class="md:w-1/2 bg-white border border-gray-200 h-85 rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
+                    <img src="images/assets/lutte1.jpeg" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-85">
                 </div>
-            </div>
-            <div class="pt-6 text-center">
-                <a href="contact.html" class="px-6 py-3 bg-red-600 text-lg font-bold text-white rounded-lg hover:bg-black ">Demandez un devis</a>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Logistique alimentaire-->
-    <section class="py-20 bg-gray-50 border-b border-gray-100">
+    <!--Distribution et solutions alimentaires intégrées-->
+    <section id="distribution" class="py-20">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2 bg-gray-200 h-80 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="images/log1.jpg" alt="service logistique" loading="lazy" srcset="" class="w-full h-80">
-                </div>
                 <div class="md:w-1/2">
-                    <span class="text-red-600 font-bold tracking-widest uppercase text-sm">Service 04</span>
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">logistique Alimentaire</h2>
+                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Distribution et solutions alimentaires intégrées</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        <span class="font-bold">Ogowe</span> offre un soutien logistique et approvisionnement 
-                        alimentaire de qualité pour les entreprises opérant dans des zones isolées ou industrielles.<br>
-                        <span class="font-bold">Ogowe</span> représente un véritable soutien opérationnel alliant :
+                        Nous développons des solutions fiables et innovantes pour l’approvisionnement et la distribution alimentaire, 
+                        afin de garantir qualité, continuité et efficacité dans la gestion des besoins des entreprises et institutions.
                     </p>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <li class="flex items-center space-x-3 bg-gray-200 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Sécurité et salubrité</span>
+                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Gestion de cantines</span>
                         </li>
-                        <li class="flex items-center space-x-3 bg-gray-200 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Fiabilité & professionnalisme</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-gray-200 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Approche centrée sur le client</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-gray-200 p-3 rounded">
-                            <span class="text-red-600 font-bold">✓</span>
-                            <span class="text-md">Excellence hygiénique</span>
+                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Distribution agro-alimentaire</span>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="pt-6 text-center">
-                <a href="contact.html" class="px-6 py-3 bg-red-600 text-lg font-bold text-white rounded-lg hover:bg-black ">Demandez un devis</a>
+                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="images/assets/log1.jpg" alt="service logistique" loading="lazy" srcset="" class="w-full h-85">
+                </div>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
     <!--Appel a l'action-->
-    <section class="mx-auto px-6">        
-            <div class="pt-10 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between bg-gray-100 p-8 rounded-2xl">
+    <section class="mx-auto px-6 mb-5">        
+            <div class="pt-10 mt-5 flex flex-col md:flex-row items-center justify-between bg-gray-200 p-8 rounded-2xl">
                 <div class="flex items-center gap-4 mb-6 md:mb-0">
                     <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center animate-pulse">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,7 +222,7 @@
                     </p>
                 </div>
                 
-                <a href="contact.html" class="rounded-2xl group relative inline-flex items-center justify-center px-8 py-4 font-black text-white uppercase tracking-widest bg-black overflow-hidden transition-all duration-300 hover:bg-red-600">
+                <a href="contact.html" class="rounded-2xl group relative inline-flex items-center justify-center px-8 py-4 font-black text-white uppercase tracking-widest bg-green-800 overflow-hidden transition-all duration-300 hover:text-black">
                     <span class="relative z-10 ">Contactez-nous</span>
                     <svg class="w-5 h-5 ml-3 relative z-10 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -311,10 +258,6 @@
                     <a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
                         <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
                         Accueil
-                    </a>
-                    <a href="about.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
-                        <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
-                        Qui sommes-nous
                     </a>
                     <a href="services.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
                         <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
