@@ -47,7 +47,6 @@
 
             <div class="hidden md:flex space-x-6 uppercase text-sm font-bold">
                 <a href="index.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Accueil</a>
-                <a href="apropos.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Qui sommes-nous ?</a>
                 <a href="services.html" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Services</a>
                 <a href="contact.html" aria-current="page" class="hover:text-red-600 font-bold hover:px-2 hover:border-b-4 hover:border-red-600 transition">Contact</a>
             </div>
@@ -71,7 +70,6 @@
 
         <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col space-y-4 uppercase text-xs font-bold border-t border-gray-100 pt-4 pb-2">
             <a href="index.html" class="hover:text-red-600 transition pl-4 border-l-4 border-red-600">Accueil</a>
-            <a href="apropos.html" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Qui sommes-nous ?</a>
             <a href="services.html" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Services</a>
             <a href="contact.html" aria-current="page" class="hover:text-red-600 transition pl-4 border-l-4 border-transparent hover:border-red-600">Contact</a>
         </div>
@@ -101,13 +99,23 @@
     </style>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <header class="bg-black text-white py-12">
-        <div class="container mx-auto px-6 text-center">
+    <header class="relative bg-black text-white py-20 overflow-hidden">
+        <!-- Image de fond -->
+        <div class="absolute inset-0">
+            <img src="images/logo/logo-ogowe.jpeg" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
+        </div>
+
+        <!-- Contenu -->
+        <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contactez-nous</h1>
-            <p class="text-xl max-w-2xl mx-auto opacity-90">
+            <p class="text-xl text-gray-200 max-w-2xl text-justify">
                 Prêt à assainir votre environnement ? Notre équipe est à votre disposition pour un devis ou une intervention.
             </p>
         </div>
+
+        <!-- Décoratif cercle rouge -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full z-0"></div>
     </header>
 
     <section class="py-12">
@@ -183,10 +191,10 @@
                             <label class="block text-sm font-bold uppercase mb-2">Type de service souhaité</label>
                             <select name="service" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Sélectionnez un service</option>
-                                <option value="nettoyage">Hygiene et Entretien</option>
-                                <option value="parasites">Lutte Antiparasitaire</option>
-                                <option value="restauration">Gestion de cantines</option>
-                                <option value="restauration">Distribution</option>
+                                <option value="Hygiene-Entretien">Hygiene et Entretien</option>
+                                <option value="Lutte Antiparasitaire">Lutte Antiparasitaire</option>
+                                <option value="Gestion de cantines">Gestion de cantines</option>
+                                <option value="Distribution">Distribution</option>
                             </select>
                         </div>
                         <div>
@@ -216,7 +224,7 @@
             <div class="space-y-6">
                 <div class="flex flex-col">
                     <h4 class="text-white font-black text-2xl uppercase tracking-tighter">
-                        OGOWE <span class="text-red-600 italic">CLEANING</span>
+                        OGOWE
                     </h4>
                     <div class="w-12 h-1 bg-red-600 mt-2"></div>
                 </div>
@@ -235,10 +243,6 @@
                     <a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
                         <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
                         Accueil
-                    </a>
-                    <a href="about.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
-                        <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
-                        Qui sommes-nous
                     </a>
                     <a href="services.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-300 flex items-center gap-2 group">
                         <span class="w-0 h-px bg-red-600 transition-all duration-300 group-hover:w-4"></span>
