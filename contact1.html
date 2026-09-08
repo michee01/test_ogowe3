@@ -30,7 +30,7 @@
     </style>
 </head>
 <body class="bg-white text-black font-sans">
-          
+    
     <!--Section Nav-->
     <nav class="font-sans bg-white text-black sticky top-0 z-50 border-b-gray-200 border-b-2 opacity-90">
         <div class="text-sm px-10 p-1 bg-black text-white  mb-2 flex items-start border-b-2 border-gray-200">
@@ -99,23 +99,43 @@
     </style>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <header class="relative bg-black text-white py-20 overflow-hidden">
+    <header class="relative bg-gray-950 text-white overflow-hidden">
+
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="images/logo/logo-ogowe1.png" alt="Fond header" class="w-full h-full object-cover opacity-60">
-            <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
+            <img
+                src="images/logo/logo-ogowe1.png"
+                alt=""
+                class="w-full h-full object-cover opacity-30"
+            >
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/5 to-black/2"></div>
         </div>
 
         <!-- Contenu -->
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contact us</h1>
-            <p class="text-xl text-gray-200 max-w-xl text-justify">
-                Contact us for all your transit and transportation needs from Dar es Salaam, as well as for the sanitation and maintenance of your premises.
-            </p>
-        </div>
+        <div class="relative z-10 container mx-auto px-6 py-16 md:py-20">
 
-        <!-- Décoratif cercle rouge -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full z-0"></div>
+            <div class="max-w-4xl">
+                <!-- Petite ligne décorative -->
+                <div class="flex items-center gap-3 mb-5">
+                    <span class="w-12 h-1 bg-red-600"></span>
+                    <span class="w-6 h-1 bg-white"></span>
+                </div>
+                <!-- Titre -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight leading-tight">
+                    Contact Us
+                </h1> <br>
+                <!-- Description 
+                <p class="mt-5 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
+                    Une expertise technique multidisciplinaire pour répondre à vos exigences résidentiels, 
+                    commerciaux et industriels.
+                </p>-->
+            </div>
+
+        </div>
+        <!-- Élément décoratif rouge -->
+        <div class="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-red-600/10"></div>
+
     </header>
 
     <section class="py-12">
@@ -207,10 +227,10 @@
                             <label class="block text-sm font-bold uppercase mb-2">Service Type</label>
                             <select name="service" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Select a service</option>
-                                <option value="Hygiene-Entretien">Hygiene & Maintenance</option>
-                                <option value="Lutte Antiparasitaire">Pest Control</option>
-                                <option value="Gestion de cantines">Catering Management</option>
-                                <option value="Distribution">Distribution</option>
+                                <option value="Hygiene-Entretien">Logistics & Distribution</option>
+                                <option value="Lutte Antiparasitaire">Hygiene & Maintenance</option>
+                                <option value="Gestion de cantines">Health and Safety</option>
+                                <option value="Distribution">Others</option>
                             </select>
                         </div>
                         <div>
@@ -226,11 +246,6 @@
             </div>
         </div>
     </section>
-
-    <a href="https://wa.me/243977976226" class="whatsapp-float group" target="_blank">
-        <span class="text-xl mr-2">💬</span> 
-        <span class="text-xs uppercase tracking-tighter">Pest Emergency</span>
-    </a>
     
   
     <!--Footer-->
